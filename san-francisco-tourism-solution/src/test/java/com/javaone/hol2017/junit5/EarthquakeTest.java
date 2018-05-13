@@ -1,12 +1,11 @@
 package com.javaone.hol2017.junit5;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.hamcrest.Matchers.*;
-import static org.hamcrest.MatcherAssert.*;
-
+import com.javaone.hol2017.junit5.Earthquake.ShakeException;
 import org.junit.jupiter.api.*;
 
-import com.javaone.hol2017.junit5.Earthquake.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsString;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class EarthquakeTest {
 	private Earthquake earthquake;
