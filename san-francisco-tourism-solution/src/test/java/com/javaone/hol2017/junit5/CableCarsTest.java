@@ -1,15 +1,14 @@
 package com.javaone.hol2017.junit5;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
-import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 public class CableCarsTest {
 	
 	@Test
 	public void numberLines() {
-		System.out.println("hi");
 		int actual = CableCars.getNumberLines();
 		assertEquals(3, actual);
 	}
